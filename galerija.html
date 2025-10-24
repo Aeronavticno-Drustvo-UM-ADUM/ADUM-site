@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>ADUM</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="galerija.html" class="active">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <h1>Galerija</h1>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/galerija/grupna-slika.jpg" alt="Delavnica programiranja">
+                    <div class="gallery-caption">
+                        <h3>Skupinska fotografija</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galerija/klub-slika-2.jpg" alt="Hackathon tekmovanje">
+                    <div class="gallery-caption">
+                        <h3>Pozdrav!</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galerija/rokovanje.jpg" alt="Študentski projekt">
+                    <div class="gallery-caption">
+                        <h3>Podelitev priznanja</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galerija/letelica.jpg" alt="Družabno druženje">
+                    <div class="gallery-caption">
+                        <h3>Letelica 2024</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galerija/priznanje.jpg" alt="Tehnična delavnica">
+                    <div class="gallery-caption">
+                        <h3>Priznanje</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galerija/klub-slika.jpg" alt="Predavanje gostujočega profesorja">
+                    <div class="gallery-caption">
+                        <h3>Tekmovalna fotografija</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ADUM. Vse pravice pridržane.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
+
