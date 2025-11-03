@@ -454,3 +454,165 @@ footer {
     }
     
 }
+
+/* MEMBERS PAGE STYLES - POJEDOSTAVLJENO */
+.members-section {
+    padding: 80px 0;
+    margin-top: 70px;
+    background: var(--light-bg);
+}
+
+.members-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.members-subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.role-section {
+    margin-bottom: 5rem;
+}
+
+.role-title {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.role-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.member-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(240, 93, 2, 0.2);
+}
+
+.member-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-image {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.member-name {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.no-image {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, var(--medium-bg), var(--gray-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    position: relative;
+}
+
+.no-image:before {
+    content: "👤";
+    font-size: 3rem;
+    opacity: 0.3;
+    position: absolute;
+}
+
+@media (max-width: 1024px) {
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .member-card {
+        margin: 0 0.5rem;
+    }
+    
+    .role-title {
+        font-size: 1.6rem;
+    }
+    
+    .members-title {
+        font-size: 2rem;
+    }
+    
+    .members-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .member-info {
+        padding: 1.5rem 1rem;
+        min-height: 80px;
+    }
+    
+    .member-name {
+        font-size: 1.2rem;
+    }
+}
