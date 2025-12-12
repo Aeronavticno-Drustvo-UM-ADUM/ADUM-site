@@ -779,13 +779,17 @@ h1 {
    RESPONSIVE - MOBILE (768px)
     */
 @media (max-width: 768px) {
-  .icons_middle {
+  /* .icons_middle {
     gap: 10px;
   }
 
   .icons_middle img,
   .icons_left img {
     height: 50px;
+  } */
+  
+  .icons_middle {
+    display: none;
   }
 
   .team-grid {
