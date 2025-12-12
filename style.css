@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
-  font-size: 16px;
+  font-size: 13px;
   background-color: rgb(58, 63, 69);
 }
 
@@ -12,19 +12,19 @@
 
 @media (min-width: 1440px) {
   :root {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1920px) {
   :root {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 2560px) {
   :root {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
