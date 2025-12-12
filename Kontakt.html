@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Kontakt</title>
+
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle">
+  <header>
+    <div class="header-wrapper">
+      <div class="icons_left">
+        <img src="/images/ADUM_intro.png">
+      </div>
+      <div class="icons_middle">
+        <img src="/images/Feri.png">
+        <img src="/images/Univeza v mariboru.png">
+        <img src="/images/FS.png">
+      </div>
+      <div class="header-right">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <ul>
+      <li>
+        <a class="medium_text" href="index.html">O nas</a>
+      </li>
+      <li>
+        <a class="medium_text" href="projekti.html">Projekti</a>
+      </li>
+      <li>
+        <a href="clani.html" class="medium_text">Člani</a>
+      </li>
+      <!-- <li>
+                        <a href="galerija.html" class="medium_text">Galerija</a>
+              </li> -->
+      <li>
+        <a href="Sponzorji.html" class="medium_text">Sponzorji</a>
+      </li>
+      <li>
+        <a href="Kontakt.html" class="medium_text">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="contact-container">
+    <h1 class="contact-title">Kontaktirajte Nas</h1>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>📍 Lokacija</h3>
+          <p>UM FERI, Koroška cesta 46, 2000 Maribor</p>
+        </div>
+        <div class="contact-item">
+          <h3>📧 E-pošta</h3>
+          <p>info@adum.si</p>
+        </div>
+        <div class="contact-item">
+          <h3>📱 Instagram</h3>
+          <p><a href="https://instagram.com/adum_um" target="_blank">@adum_um</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>📘 Facebook</h3>
+          <p><a href="https://facebook.com/aeroUM" target="_blank">ADUM - Aeronavtično društvo Univerze v Mariboru</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <iframe id="map" src="https://www.google.com/maps?q=46.559158,15.643338&hl=en&z=15&output=embed" frameborder="0"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <footer style="position: sticky; bottom: 0;height: fit-content;">
+    <p class="copyright">
+      © ADUM <span id="adumYear"></span>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
