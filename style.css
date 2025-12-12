@@ -151,10 +151,8 @@ header {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)),
     url("https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/jpg.jpg");
 
   background-repeat: no-repeat;
@@ -328,14 +326,26 @@ footer p {
   text-align: center;
 }
 
-.site-footer .copyright{
+.site-footer .copyright {
   margin-top: 16px;
   opacity: 0.85;
   font-size: 0.9rem;
 }
+
 /* 
    PROJEKTI PAGE STYLES
     */
+
+.project_tag {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  background: var(--orange);
+  color: var(--gray);
+}
+
+
 .container {
   max-width: 90%;
   margin: 40px auto;
@@ -528,6 +538,8 @@ h1 {
   padding: 0 20px;
   /* margin-top: 100px; */
 }
+
+
 
 .contact-title {
   text-align: center;
@@ -727,6 +739,8 @@ h1 {
 
 
   /*Project*/
+
+
   .slike_projekti_container {
     display: flex;
     flex-direction: row;
@@ -735,8 +749,9 @@ h1 {
     margin-top: 20px;
     align-items: center;
   }
-  .slike_projekti{
-    width: 100% ;
+
+  .slike_projekti {
+    width: 100%;
     min-width: none !important;
   }
 
@@ -787,7 +802,7 @@ h1 {
   .icons_left img {
     height: 50px;
   } */
-  
+
   .icons_middle {
     display: none;
   }
