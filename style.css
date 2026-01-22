@@ -189,7 +189,7 @@ header {
 
 #h1_kodsmo {
   color: rgb(237, 120, 53);
-  font-size: 40px;
+  font-size: 50px;
 }
 
 /* INDEX PAGE - POSLANSTVO BOX */
@@ -526,6 +526,8 @@ h1 {
   color: rgb(237, 120, 53);
   text-transform: uppercase;
   font-size: clamp(1.4rem, 1vw, 1.7rem);
+  padding-top: 3px;
+  padding-bottom: 37px;
 }
 
 /* 
@@ -737,10 +739,6 @@ h1 {
   }
 
 
-
-  /*Project*/
-
-
   .slike_projekti_container {
     display: flex;
     flex-direction: row;
@@ -823,5 +821,57 @@ h1 {
     font-size: 30px;
   }
 
+ @media (max-width: 768px) {
+
+  
+  #sponzora table {
+    margin: 0 auto !important;  
+    transform: none !important;
+    width: 90% !important;
+    border-collapse: collapse;    
+    border-spacing: 0;            
+  }
+
+  
+  #sponzora table:nth-of-type(1) td,
+  #sponzora table:nth-of-type(2) td {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    padding-bottom: 20px; 
+  }
+
+  
+  #sponzora table:nth-of-type(n+3) td {
+    display: inline-block;
+    width: 45% !important; 
+    text-align: center;
+    padding: 5px 0; 
+  }
+
+  
+  #sponzora img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  #sponzora h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .site-footer {
+  background-color: #2c2c2c; 
+  color: #fff;               
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.site-footer p {
+  margin: 5px 0; 
+}
 
 }

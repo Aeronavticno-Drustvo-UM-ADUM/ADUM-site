@@ -12,6 +12,29 @@
     <link rel="icon" type="image/ico" sizes="48x48" href="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/Icon/ADUM_intro48.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/Icon/ADUM_intro180.ico">
     <link rel="shortcut icon" href="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/Icon/ADUM_intro.ico">
+    
+    <style>
+        /* Samo za centriranje zadnjega člana */
+        .team-grid {
+            position: relative;
+        }
+        
+        /* Skrijemo prazen element za centriranje */
+        .empty-space {
+            visibility: hidden;
+            height: 0;
+            width: 100%;
+        }
+        
+        /* Za centriranje zadnjega člana */
+        .center-last {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            clear: both;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 <input type="checkbox" id="menu-toggle">
@@ -75,23 +98,41 @@
     <h2 class="vodje-naslov">VODJE SKLOPOV</h2>
 
     <div class="team-grid">
-        <div class="team-member">
+
+                <div class="team-member">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/grey_user_icon.png" alt="ANDY PREMZL" class="avatar-img">
+                <img src="images/members/matevz_bela.jpg" alt="MATEVŽ ŠAVORA" class="avatar-img">
             </div>
-            <div class="member-name">ANDY PREMZL</div>
-            <div class="member-role">TOVOR</div>
+            <div class="member-name">MATEVŽ ŠAVORA</div>
+            <div class="member-role">PREDSEDNIK</div>
         </div>
 
-        <div class="team-member">
+                <div class="team-member">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/grey_user_icon.png" alt="MILAN ROTOVNIK" class="avatar-img">
+                <img src="images/members/mitja.jpeg" alt="MITJA ŠTRAKL" class="avatar-img">
             </div>
-            <div class="member-name">MILAN ROTOVNIK</div>
-            <div class="member-role">ZASTAVA</div>
+            <div class="member-name">MITJA ŠTRAKL</div>
+            <div class="member-role">GLAVNI INŽENIR</div>
         </div>
 
-        <div class="team-member">
+                <div class="team-member">
+            <div class="avatar">
+                <img src="images/members/matic.jpeg" alt="MATIC DREU" class="avatar-img">
+            </div>
+            <div class="member-name">MATIC DREU</div>
+            <div class="member-role">AERODINAMIKA</div>
+        </div>
+
+                    <div class="team-member">
+            <div class="avatar">
+                <img src="images/members/jan.jpeg" alt="JAN KORITNIK" class="avatar-img">
+            </div>
+            <div class="member-name">JAN KORITNIK</div>
+            <div class="member-role">CAM</div>
+        </div>
+
+
+                <div class="team-member">
             <div class="avatar">
                 <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/blaz_morel_bela.jpg" alt="BLAŽ MOREL" class="avatar-img">
             </div>
@@ -99,15 +140,7 @@
             <div class="member-role">KONSTRUKCIJA LETALA</div>
         </div>
 
-        <div class="team-member">
-            <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/grey_user_icon.png" alt="MATIC DREU" class="avatar-img">
-            </div>
-            <div class="member-name">MATIC DREU</div>
-            <div class="member-role">AERODINAMIKA</div>
-        </div>
-
-        <div class="team-member">
+               <div class="team-member">
             <div class="avatar">
                 <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/matjaz_bela.jpg" alt="MATJAŽ PERNEK" class="avatar-img">
             </div>
@@ -115,7 +148,7 @@
             <div class="member-role">POGONSKI SKLOP, SISTEMI</div>
         </div>
 
-        <div class="team-member">
+                <div class="team-member">
             <div class="avatar">
                 <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/viktor1_bela.jpg" alt="VIKTOR RACKOV" class="avatar-img">
             </div>
@@ -123,13 +156,25 @@
             <div class="member-role">PROGRAMSKA OPREMA, SISTEMI</div>
         </div>
 
+                <div class="team-member">
+            <div class="avatar">
+                <img src="images/members/luka.jpg" alt="LUKA VOVK" class="avatar-img">
+            </div>
+            <div class="member-name">LUKA VOVK</div>
+            <div class="member-role">STROJNI VID</div>
+        </div>
+
         <div class="team-member">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/grey_user_icon.png" alt="JAN KORITNIK" class="avatar-img">
+                <img src="images/members/andy.jpeg" alt="ANDY PREMZL" class="avatar-img">
             </div>
-            <div class="member-name">JAN KORITNIK</div>
-            <div class="member-role">CAM</div>
+            <div class="member-name">ANDY PREMZL</div>
+            <div class="member-role">TOVOR</div>
         </div>
+
+        
+        <div class="empty-space"></div>
+        
 
         <div class="team-member">
             <div class="avatar">
@@ -138,7 +183,8 @@
             <div class="member-name">ANASTASIJA DŽUDŽAR</div>
             <div class="member-role">ODNOSI Z JAVNOSTJO</div>
         </div>
-    </div>
+
+    </div> 
 </div>
 
 <footer>
