@@ -498,6 +498,7 @@ h1 {
 }
 
 /* SPONSORS Third Row */
+
 .sponsors-third {
   margin-top: 50px;
   display: flex;
@@ -520,6 +521,17 @@ h1 {
   width: 100%;
   object-fit: contain;
 }
+
+/* Soponsori fixes */
+
+ #hennlich-fix{
+  width: 90px !important;
+ }
+
+#murska-sobota-fix{
+  width: 90px !important;
+ }
+
 
 
 
