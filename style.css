@@ -483,12 +483,6 @@ h1 {
   max-height: none;  
 }
 
-.feri-logo img {
-  transform: scale(0.96); 
-  transform-origin: center;
-  display: block;
-}
-
 
 /* #um-fix img {
   transform: scale(2);
