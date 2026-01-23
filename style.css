@@ -467,36 +467,23 @@ h1 {
   margin-top: 30px;
 }
 
-
-.sponsor-row-um a {
-  width: 210px;        
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+.um-logo img {
+  width: 180px;          
 }
 
-.sponsor-row-um img {
-  width: 100%;
-  object-fit: contain;
-}
 
 .sponsor-row-sub {
   display: flex;
-  gap: 50px;
+  gap: 40px;            
   margin-top: 25px;
 }
 
-.sponsor-row-sub a {
-  width: 200px;        
-  padding: 15px;
-  display: flex;
-  justify-content: center;
+.fs-logo img {
+  width: 150px;         
 }
 
- .sponsor-row-sub img {
-  max-height: 80px;     
-  width: auto;
-  object-fit: contain;
+.feri-logo img {
+  width: 100px;          
 }
 
 
