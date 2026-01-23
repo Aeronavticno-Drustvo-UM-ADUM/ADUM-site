@@ -488,8 +488,7 @@ h1 {
   width: auto;
   object-fit: contain;
   display: block;
-  max-height: none;
-  transform: scale(1.2);     
+  max-height: none;     
   transform-origin: center;   
 }
 
