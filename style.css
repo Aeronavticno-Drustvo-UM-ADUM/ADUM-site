@@ -468,7 +468,8 @@ h1 {
 }
 
 .um-logo img {
-  width: 300px;          
+  width: 300px;
+  height: auto;          
 }
 
 
@@ -479,11 +480,13 @@ h1 {
 }
 
 .fs-logo img {
-  width: 250px;         
+  width: 250px; 
+  height: auto;        
 }
 
 .feri-logo img {
-  width: 200px;          
+  width: 200px;
+  height: auto;          
 }
 
 
