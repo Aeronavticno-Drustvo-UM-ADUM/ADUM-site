@@ -478,23 +478,25 @@ h1 {
 
 /* SPONSORS Second Row */
 .sposnors-second {
-  display: flex;
-  flex-direction: column;   /* en pod drugim */
-  align-items: center;
-  gap: 20px;
+  display: flex !important;           
+  flex-direction: column !important;  
+  align-items: center !important;     
+  gap: 20px !important;               
+  margin-top: 50px;                   
 }
 
 .sposnors-second > a {
-  padding: 20px;
-  width: 300px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  width: 300px;     
+  max-width: 90%;  
+  padding: 10px;
 }
 
 .sposnors-second > a img {
   width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
