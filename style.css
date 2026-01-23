@@ -530,14 +530,37 @@ h1 {
 
 .sponsors-third>a {
   padding: 20px;
-  width: 150px;
+  width: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.sponsors-third>a img {
+.sponsors-fourth>a img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sponsors-fourth {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsors-fourth>a {
+  padding: 20px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sponsors-fourth>a img {
   width: 100%;
   object-fit: contain;
 }
