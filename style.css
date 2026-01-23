@@ -484,9 +484,8 @@ h1 {
 }
 
 .fs-logo img {
-  transform: scale(0.95);
+  height: 145px;   
 }
-
 
 /* #um-fix img {
   transform: scale(2);
