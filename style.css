@@ -486,7 +486,8 @@ h1 {
 
 .feri-logo img {
   width: 350px;
-  height: auto;          
+  height: auto; 
+  scale: 0.6;         
 }
 
 
