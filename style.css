@@ -100,6 +100,10 @@ header {
   transform: scale(0.50);
 }
 
+.icons_middle img.um{
+  margin-left: 20px;
+}
+
 .navbar {
   background-color: rgb(237, 120, 53);
   width: 100%;
