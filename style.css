@@ -479,11 +479,12 @@ h1 {
 /* SPONSORS Second Row */
 .sposnors-second {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;   /* en pod drugim */
   align-items: center;
+  gap: 20px;
 }
 
-.sposnors-second>a {
+.sposnors-second > a {
   padding: 20px;
   width: 300px;
   display: flex;
@@ -492,10 +493,11 @@ h1 {
   overflow: hidden;
 }
 
-.sposnors-second>a img {
+.sposnors-second > a img {
   width: 100%;
   object-fit: contain;
 }
+
 
 /* SPONSORS Third Row */
 .sponsors-third {
