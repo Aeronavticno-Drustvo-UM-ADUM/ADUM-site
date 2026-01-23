@@ -480,8 +480,7 @@ h1 {
   width: auto;     
   object-fit: contain;
   display: block; 
-  max-height: none; 
-  transform: none; 
+  max-height: none;  
 }
 
 .feri-logo img {
