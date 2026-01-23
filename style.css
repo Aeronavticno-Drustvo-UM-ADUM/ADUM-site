@@ -460,44 +460,44 @@ h1 {
 
 /* SPONSORS MAIN PAGE */
 
-/* SPONSORS MAIN Sponsors */
-
 .sponsors-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
 }
 
-.sponsor-um a {
-  width: 320px;
-  padding: 40px;
+/* UM – prva vrstica */
+.sponsor-row-um a {
+  width: 260px;          /* NORMALNA velikost */
+  padding: 30px;
   display: flex;
   justify-content: center;
 }
 
-.sponsor-um img {
+.sponsor-row-um img {
   width: 100%;
   object-fit: contain;
 }
 
-.sponsor-sub {
+/* FS + FERI – druga vrstica */
+.sponsor-row-sub {
   display: flex;
-  gap: 80px;
-  margin-top: 40px;
+  gap: 60px;
+  margin-top: 30px;
 }
 
-.sponsor-sub a {
-  width: 260px;
+.sponsor-row-sub a {
+  width: 220px;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
 
-.sponsor-sub img {
+.sponsor-row-sub img {
   width: 100%;
   object-fit: contain;
 }
+
 
 /* #um-fix img {
   transform: scale(2);
