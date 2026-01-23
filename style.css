@@ -467,26 +467,19 @@ h1 {
   margin-top: 30px;
 }
 
-.um-logo img {
-  width: 200px;
-  height: auto;          
-}
-
-
 .sponsor-row-sub {
   display: flex;
   gap: 40px;            
   margin-top: 25px;
 }
 
-.fs-logo img {
-  width: 300px; 
-  height: auto;        
-}
-
+.um-logo img,
+.fs-logo img,
 .feri-logo img {
-  width: 300px;
-  height: auto;         
+  height: 70px;    
+  width: auto;     
+  object-fit: contain;
+  display: block;  
 }
 
 
