@@ -484,7 +484,9 @@ h1 {
 }
 
 .feri-logo img {
-  padding-top: 5px
+  transform: scale(0.90); 
+  transform-origin: center;
+  display: block;
 }
 
 
