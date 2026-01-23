@@ -96,6 +96,10 @@ header {
   object-fit: contain;
 }
 
+.icons_middle img.fs{
+  transform: scale(0.85);
+}
+
 .navbar {
   background-color: rgb(237, 120, 53);
   width: 100%;
