@@ -108,8 +108,6 @@ header {
   margin-top: 7px;
 }
 
-
-
 .navbar {
   background-color: rgb(237, 120, 53);
   width: 100%;
@@ -466,21 +464,37 @@ h1 {
 
 .sponsors-main {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
-.sponsors-main>a {
-  padding: 60px;
+.sponsor-um a {
   width: 320px;
-  box-sizing: border-box; 
+  padding: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-.sponsors-main>a img {
+.sponsor-um img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sponsor-sub {
+  display: flex;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.sponsor-sub a {
+  width: 260px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor-sub img {
   width: 100%;
   object-fit: contain;
 }
