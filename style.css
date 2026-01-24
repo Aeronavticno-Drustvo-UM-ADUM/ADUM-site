@@ -501,32 +501,96 @@ h1 {
 }
 
 
-/* SPONSORS Third Row */
+/* THIRD ROW - glavni sponzorji (večji logotipi) */
 .sponsors-third {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 30px; /* razmik med logotipi */
 }
 
-.sponsors-third>a {
-  padding: 20px;
-  width: 150px;
+.sponsors-third a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
-.sponsors-third>a img {
-  width: 100%;
+.sponsors-third a img {
+  max-width: 120px; /* večji logotipi */
+  height: auto;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
+.sponsors-third a img:hover {
+  transform: scale(1.1); /* rahlo povečanje ob hover */
+}
 
+/* FOURTH ROW - manj pomembni sponzorji (manjši logotipi) */
+.sponsors-fourth {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
 
+.sponsors-fourth a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sponsors-fourth a img {
+  max-width: 90px; /* manjši logotipi */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsors-fourth a img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE - third in fourth row */
+@media (max-width: 1000px) {
+  .sponsors-third,
+  .sponsors-fourth {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sponsors-third a img {
+    max-width: 100px;
+  }
+
+  .sponsors-fourth a img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sponsors-third,
+  .sponsors-fourth {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .sponsors-third a img {
+    max-width: 90px;
+  }
+
+  .sponsors-fourth a img {
+    max-width: 70px;
+  }
+}
 
 /* 
    ČLANI PAGE STYLES
