@@ -560,7 +560,7 @@ h1 {
 }
 
 .sponsors-fourth a img {
-  height: 80px; /* fiksna višina, logotipi bodo enaki po višini */
+  height: 70px; /* fiksna višina, logotipi bodo enaki po višini */
   width: auto;   /* širina se prilagodi višini */
   object-fit: contain;
 }
