@@ -585,45 +585,6 @@ h1 {
   }
 }
 
-/* RESPONSIVE - ena slika na vrstico za mobilne naprave */
-@media (max-width: 500px) {
-  .sponsors-third,
-  .sponsors-fourth {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .sponsors-third a img {
-    max-width: 90px;
-    height: auto;
-  }
-
-  .sponsors-fourth a img {
-    max-width: 70px;
-    height: auto;
-  }
-}
-
-
-/* RESPONSIVE - en logotip na vrstico za mobilne naprave */
-@media (max-width: 500px) {
-  .sponsors-third,
-  .sponsors-fourth {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; /* manjši gap na mobilnih napravah */
-  }
-
-  .sponsors-third a img {
-    max-width: 90px; /* prilagojeno za telefon */
-  }
-
-  .sponsors-fourth a img {
-    max-width: 70px; /* prilagojeno za telefon */
-  }
-}
-
 /* Soponsori fixes */
 
  #hennlich-fix{
