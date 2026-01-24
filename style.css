@@ -537,7 +537,7 @@ h1 {
 }
 
 .sponsors-third a img {
-  max-width: 200px; /* glavni logotipi večji */
+  max-width: 90px; /* glavni logotipi večji */
   height: auto;
   object-fit: contain;
 }
