@@ -519,28 +519,70 @@ h1 {
 
 /* SPONSORS Third Row */
 
+/* THIRD ROW - glavni sponzorji (večji logotipi) */
 .sponsors-third {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 30px; /* razmik med logotipi */
 }
 
-.sponsors-third>a {
-  padding: 20px;
-  width: 150px;
+.sponsors-third a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
-.sponsors-third>a img {
-  width: 100%;
+.sponsors-third a img {
+  max-width: 120px; /* večji logotipi, ker je manj sponzorjev */
+  height: auto;
   object-fit: contain;
 }
+
+/* FOURTH ROW - manj pomembni sponzorji (manjši logotipi) */
+.sponsors-fourth {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.sponsors-fourth a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sponsors-fourth a img {
+  max-width: 90px; /* manjši logotipi */
+  height: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVE - en logotip na vrstico za mobilne naprave */
+@media (max-width: 500px) {
+  .sponsors-third,
+  .sponsors-fourth {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sponsors-third a img {
+    max-width: 90px;
+  }
+
+  .sponsors-fourth a img {
+    max-width: 70px;
+  }
+}
+
 
 
 /* Soponsori fixes */
