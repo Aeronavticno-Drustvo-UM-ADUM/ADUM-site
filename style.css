@@ -542,14 +542,14 @@ h1 {
   object-fit: contain;
 }
 
-/* FOURTH ROW - manj pomembni sponzorji, stil kot third row */
+/* FOURTH ROW - manj pomembni sponzorji, enak stil kot third row */
 .sponsors-fourth {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 30px; /* enak razmik kot third row */
 }
 
 .sponsors-fourth a {
@@ -560,9 +560,29 @@ h1 {
 }
 
 .sponsors-fourth a img {
-  height: 70px; /* fiksna višina, logotipi bodo enaki po višini */
+  height: 80px; /* fiksna višina, logotipi bodo enaki po višini */
   width: auto;   /* širina se prilagodi višini */
   object-fit: contain;
+}
+
+/* RESPONSIVE - ena slika na vrstico za mobilne naprave */
+@media (max-width: 500px) {
+  .sponsors-third,
+  .sponsors-fourth {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sponsors-third a img {
+    max-width: 90px;
+    height: auto;
+  }
+
+  .sponsors-fourth a img {
+    max-width: 70px;
+    height: auto;
+  }
 }
 
 /* RESPONSIVE - ena slika na vrstico za mobilne naprave */
