@@ -593,17 +593,9 @@ h1 {
   }
 }
 
-/* Soponsori fixes */
-
-/*#hennlich-fix {
-  width: 70px !important;
-}
-
-#murska-sobota-fix {
-  width: 70px !important;
-}
-
-/* 
+.akms&hennlich_fix {
+    height: 48px;
+} 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ČLANI PAGE STYLES
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
 .clani-container {
