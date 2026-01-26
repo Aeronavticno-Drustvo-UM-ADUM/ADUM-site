@@ -594,7 +594,7 @@ h1 {
 }
 
 .akms&hennlich_fix {
-    height: 48px;
+    !important height: 48px;
 } 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ČLANI PAGE STYLES
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
