@@ -538,10 +538,6 @@ h1 {
   overflow: hidden;
 }
 
-
-
-
-
 .sponsors-third>a img {
   object-fit: contain;
   width: 100%
@@ -566,8 +562,10 @@ h1 {
   overflow: hidden;
 }
 
-.akms&hennlich_fix{
-  !important max-height: 50px;
+.akms-hennlich-fix {
+  height: 48px !important;
+  width: auto !important;
+  object-fit: contain;
 }
 
 .sponsors-fourth>a img {
