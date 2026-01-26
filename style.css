@@ -566,6 +566,10 @@ h1 {
   overflow: hidden;
 }
 
+.akms&hennlich_fix{
+  !important max-height: 50px;
+}
+
 .sponsors-fourth>a img {
 
   width: 100%;
@@ -591,10 +595,6 @@ h1 {
     max-width: 70px;
     height: auto;
   }
-}
-
-.akms&hennlich_fix {
-    !important height: 48px;
 } 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ČLANI PAGE STYLES
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
