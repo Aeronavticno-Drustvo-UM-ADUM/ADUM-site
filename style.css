@@ -545,7 +545,7 @@ h1 {
 
 /* FOURTH ROW - manj pomembni sponzorji, enak stil kot third row */
 .sponsors-fourth {
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
