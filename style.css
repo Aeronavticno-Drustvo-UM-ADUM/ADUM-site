@@ -527,6 +527,7 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .sponsors-third>a {
