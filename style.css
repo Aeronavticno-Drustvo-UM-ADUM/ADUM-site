@@ -568,6 +568,9 @@ h1 {
   width: auto !important;
   object-fit: contain;
 }
+.agroremont {
+  width: 120% !important
+}
 
 .sponsors-fourth>a img {
 
