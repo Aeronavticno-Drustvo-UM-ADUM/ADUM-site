@@ -572,7 +572,6 @@ h1 {
 .agroremont-fix{
   height: 45px !important;
   width: 150px !important;
-  object-fit: contain;
 }
 
 .sponsors-fourth>a img {
