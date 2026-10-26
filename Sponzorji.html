@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3a3f45">
+  <script src="js/theme.js"></script>
+  <title>Sponzorji | ADUM</title>
+  <meta name="description" content="Sponzorji in partnerji, ki podpirajo delo Aeronavtičnega društva Univerze v Mariboru.">
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/header-footer.css" rel="stylesheet">
+  <link href="css/sponzorji.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skoči na vsebino</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ADUM, domača stran">
+        <img src="images/brand/adum-logo.png" alt="ADUM, Aeronavtično društvo Univerze v Mariboru">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Odpri meni">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">O nas</a></li>
+          <li><a href="projekti.html">Projekti</a></li>
+          <li><a href="clani.html">Člani</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="Sponzorji.html" aria-current="page">Sponzorji</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="partner-logos" aria-label="Univerza v Mariboru, Fakulteta za strojništvo in Fakulteta za elektrotehniko, računalništvo in informatiko">
+        <img src="images/brand/um.png" alt="Univerza v Mariboru">
+        <img src="images/brand/fs.svg" alt="Fakulteta za strojništvo" class="partner-logos__fs">
+        <img src="images/brand/feri.png" alt="FERI">
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Preklopi na temni način">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Kje se nahajaš">
+          <a href="index.html">Domača stran</a>
+          <span>/</span>
+          <span>Sponzorji</span>
+        </nav>
+        <h1>Sponzorji</h1>
+        <p>
+          Brez podpore partnerjev ne bi bilo letal, tekmovanj in izkušenj, ki jih člani
+          pridobijo pri projektu. Hvala vsem, ki verjamete v naše delo.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="sponsor-block">
+          <h2>Univerza in fakulteti</h2>
+          <p>Društvo deluje v okviru Univerze v Mariboru.</p>
+
+          <div class="sponsor-hero">
+            <a class="sponsor-card sponsor-card--xl" href="https://www.um.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/um.svg" alt="Univerza v Mariboru">
+            </a>
+          </div>
+
+          <div class="sponsor-grid sponsor-grid--2 sponsor-grid--spaced">
+            <a class="sponsor-card sponsor-card--faculty" href="https://www.fs.um.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/fs.svg" alt="Fakulteta za strojništvo Univerze v Mariboru">
+            </a>
+            <a class="sponsor-card sponsor-card--faculty" href="https://feri.um.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/feri.svg" alt="Fakulteta za elektrotehniko, računalništvo in informatiko">
+            </a>
+          </div>
+        </div>
+
+        <div class="sponsor-block">
+          <h2>Partnerji</h2>
+          <div class="sponsor-grid sponsor-grid--2">
+            <a class="sponsor-card sponsor-card--lg" href="https://luznar.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/luznar.svg" alt="Luznar">
+            </a>
+            <a class="sponsor-card sponsor-card--lg" href="https://cule.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/cule.png" alt="Cule">
+            </a>
+          </div>
+        </div>
+
+        <div class="sponsor-block">
+          <h2>Sodelujoča podjetja</h2>
+          <div class="sponsor-grid">
+            <a class="sponsor-card" href="https://www.avl.com/en" target="_blank" rel="noopener">
+              <img src="images/sponzorji/avl.svg" alt="AVL">
+            </a>
+            <a class="sponsor-card" href="https://www.dem.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/dem.svg" alt="DEM">
+            </a>
+            <a class="sponsor-card" href="https://www.medicop.eu/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/medicop.svg" alt="Medicop">
+            </a>
+            <a class="sponsor-card" href="https://www.megras.si/pages/si/zacetek.php" target="_blank" rel="noopener">
+              <img src="images/sponzorji/megras.svg" alt="Megras">
+            </a>
+            <a class="sponsor-card" href="https://www.zav-sava.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/sava.svg" alt="Zavarovalnica Sava">
+            </a>
+            <a class="sponsor-card" href="https://www.srips-rs.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/sklad.svg" alt="Sklad">
+            </a>
+            <div class="sponsor-card">
+              <img src="images/sponzorji/optima.jpg" alt="Skupina Optima">
+            </div>
+          </div>
+        </div>
+
+        <div class="sponsor-block">
+          <h2>Podporniki</h2>
+          <div class="sponsor-grid">
+            <a class="sponsor-card" href="https://www.plastikatrcek.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/plastika-trcek.svg" alt="Plastika Trček">
+            </a>
+            <a class="sponsor-card" href="https://kreatorlab.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/kreatorlab.svg" alt="KreatorLab">
+            </a>
+            <a class="sponsor-card" href="https://www.igus.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/igus.png" alt="Igus">
+            </a>
+            <a class="sponsor-card" href="https://www.festo.com/si/sl/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/festo.svg" alt="Festo">
+            </a>
+            <a class="sponsor-card" href="https://www.lipo.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/gens-ace.svg" alt="Gens Ace">
+            </a>
+            <a class="sponsor-card" href="https://www.haberkorn.com/si/sl" target="_blank" rel="noopener">
+              <img src="images/sponzorji/haberkorn.svg" alt="Haberkorn">
+            </a>
+            <a class="sponsor-card" href="https://www.hennlich.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/hennlich.svg" alt="Hennlich">
+            </a>
+            <a class="sponsor-card" href="https://www.kamm.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/kamm.svg" alt="KAMM">
+            </a>
+            <a class="sponsor-card" href="https://www.bogadi.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/bogadi.png" alt="Bogadi">
+            </a>
+            <a class="sponsor-card" href="https://www.3way.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/3way.svg" alt="3WAY">
+            </a>
+            <a class="sponsor-card" href="https://www.arcont.si/si/sl" target="_blank" rel="noopener">
+              <img src="images/sponzorji/arcont.svg" alt="Arcont">
+            </a>
+            <a class="sponsor-card" href="https://www.aeroklub-ms.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/akms.svg" alt="Aeroklub Maribor">
+            </a>
+            <a class="sponsor-card" href="https://www.oblikovanje.com/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/oblikovanje.svg" alt="Oblikovanje.com">
+            </a>
+            <a class="sponsor-card" href="https://lux-shield.com/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/luxshield.svg" alt="Lux Shield">
+            </a>
+            <a class="sponsor-card" href="https://www.agroremont.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/agroremont.png" alt="Agroremont" class="sponsor-logo--wide">
+            </a>
+            <a class="sponsor-card" href="https://www.plama-pur.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/plama-pur.jpg" alt="Plama Pur">
+            </a>
+            <a class="sponsor-card" href="https://rtc.si/" target="_blank" rel="noopener">
+              <img src="images/sponzorji/rtc.jpg" alt="RTC">
+            </a>
+            <div class="sponsor-card">
+              <img src="images/sponzorji/mat-el.jpg" alt="Mat.el">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Postanite sponzor</h2>
+          <p>
+            S podporo pomagate študentom pridobiti izkušnje, ki jih potrebujejo za prvi korak
+            v inženirsko kariero. Veseli bomo vsake oblike sodelovanja.
+          </p>
+        </div>
+        <a class="btn btn--light" href="Kontakt.html">Kontaktirajte nas</a>
+      </div>
+    </section>
+  </main>
+
+ 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="images/brand/adum-logo.png" alt="ADUM">
+          <p>
+            Aeronavtično društvo Univerze v Mariboru združuje študente, ki gradijo letala,
+            se udeležujejo mednarodnih tekmovanj in si delijo znanje.
+          </p>
+          <div class="footer-social">
+         
+            <a href="https://instagram.com/adum_um" target="_blank" rel="noopener" aria-label="ADUM na Instagramu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"></path>
+                <path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"></path>
+                <path d="M17 7v.01"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com/aeroUM" target="_blank" rel="noopener" aria-label="ADUM na Facebooku">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+              </svg>
+            </a>
+            <a href="mailto:info@adum.si" aria-label="Piši nam na info@adum.si">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
+                <path d="M3 7l9 6l9 -6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h2>Povezave</h2>
+          <ul>
+            <li><a href="index.html">O nas</a></li>
+            <li><a href="projekti.html">Projekti</a></li>
+            <li><a href="clani.html">Člani</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="Sponzorji.html">Sponzorji</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Kontakt</h2>
+          <address>
+            UM FERI<br>
+            Koroška cesta 46<br>
+            2000 Maribor<br>
+            <a href="mailto:info@adum.si">info@adum.si</a>
+          </address>
+        </div>
+
+        <div class="footer-col footer-col--legal">
+          <h2>Podatki društva</h2>
+          <p class="footer-legal">
+            Matična številka: 4096069000<br>
+            Davčna številka: 45460647<br>
+            TRR: SI56 6100 0001 6085 081<br>
+            Delavska hranilnica d.d.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year></span> ADUM, Aeronavtično društvo Univerze v Mariboru.</p>
+        <p>Izdelano s prostovoljnim delom članov.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

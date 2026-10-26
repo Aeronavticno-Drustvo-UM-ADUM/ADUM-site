@@ -1,0 +1,349 @@
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: var(--container);
+  min-height: var(--header-height);
+  margin: 0 auto;
+  padding: 10px 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand img {
+  height: 52px;
+  width: auto;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 11px;
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
+.main-nav a[aria-current="page"] {
+  color: var(--orange-light);
+}
+
+.partner-logos {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 22px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.partner-logos img {
+  width: auto;
+  height: 28px;
+  opacity: 0.9;
+}
+
+.partner-logos img.partner-logos__fs {
+  height: 38px;
+}
+
+/* Gumb za preklop med svetlo in temno temo. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color var(--transition), border-color var(--transition),
+    color var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--orange-light);
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--orange-light);
+}
+
+.theme-toggle svg {
+  width: 19px;
+  height: 19px;
+}
+
+.theme-toggle__sun {
+  display: none;
+}
+
+.theme-toggle__moon {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle__sun {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle__moon {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--white);
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---------- Noga ---------- */
+.site-footer {
+  background: var(--dark-deep);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr 1.1fr 1.2fr;
+  gap: 40px;
+  padding: 64px 0 48px;
+}
+
+.footer-brand img {
+  height: 58px;
+  width: auto;
+  margin-bottom: 18px;
+}
+
+.footer-brand p {
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  transition: background-color var(--transition), color var(--transition),
+    border-color var(--transition);
+}
+
+.footer-social a:hover {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: var(--white);
+}
+
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-col h2 {
+  margin-bottom: 16px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  display: grid;
+  gap: 9px;
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.footer-col a:hover {
+  color: var(--orange-light);
+}
+
+.footer-col address {
+  color: rgba(255, 255, 255, 0.68);
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.footer-legal {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.8rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---------- Manjši zasloni ---------- */
+@media (max-width: 1200px) {
+  .partner-logos {
+    display: none;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.4fr 1fr 1.2fr;
+  }
+
+  .footer-col--legal {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    padding: 10px 24px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--dark);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .main-nav.is-open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .main-nav a {
+    padding: 13px 14px;
+    font-size: 0.86rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+  }
+
+  .footer-col--legal {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-inner {
+    padding: 9px 18px;
+  }
+
+  .brand img {
+    height: 44px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    padding: 48px 0 36px;
+  }
+
+  .footer-brand img {
+    height: 50px;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+}

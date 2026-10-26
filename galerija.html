@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3a3f45">
+  <script src="js/theme.js"></script>
+  <title>Galerija | ADUM</title>
+  <meta name="description" content="Fotografije ekipe ADUM z delavnic, tekmovanj in dogodkov.">
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/header-footer.css" rel="stylesheet">
+  <link href="css/galerija.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skoči na vsebino</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ADUM, domača stran">
+        <img src="images/brand/adum-logo.png" alt="ADUM, Aeronavtično društvo Univerze v Mariboru">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Odpri meni">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">O nas</a></li>
+          <li><a href="projekti.html">Projekti</a></li>
+          <li><a href="clani.html">Člani</a></li>
+          <li><a href="galerija.html" aria-current="page">Galerija</a></li>
+          <li><a href="Sponzorji.html">Sponzorji</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="partner-logos" aria-label="Univerza v Mariboru, Fakulteta za strojništvo in Fakulteta za elektrotehniko, računalništvo in informatiko">
+        <img src="images/brand/um.png" alt="Univerza v Mariboru">
+        <img src="images/brand/fs.svg" alt="Fakulteta za strojništvo" class="partner-logos__fs">
+        <img src="images/brand/feri.png" alt="FERI">
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Preklopi na temni način">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Kje se nahajaš">
+          <a href="index.html">Domača stran</a>
+          <span>/</span>
+          <span>Galerija</span>
+        </nav>
+        <h1>Galerija</h1>
+        <p>
+          Nekaj trenutkov iz delavnice, s tekmovanj in dogodkov. Največ ponosa je vedno
+          v trenutku, ko letalo prvič poleti.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/galerija/grupna-slika.jpg" alt="Člani ADUM s priznanji na podelitvi v Mariboru" loading="lazy">
+            <figcaption>Podelitev priznanj, Maribor 2025</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/galerija/klub-slika.jpg" alt="Ekipa z letalom na tekmovanju v puščavi" loading="lazy">
+            <figcaption>Ekipa z letalom na tekmovanju</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/galerija/klub-slika-2.jpg" alt="Ekipa praznuje na vzletno-pristajalni stezi" loading="lazy">
+            <figcaption>Praznovanje po uspešnem letu</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/galerija/letelica.jpg" alt="Letalo ADUM na stezi ob sončnem zahodu" loading="lazy">
+            <figcaption>Letalo ADUM v večerni svetlobi</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/galerija/priznanje.jpg" alt="Priznanje Fakultete za strojništvo in FERI" loading="lazy">
+            <figcaption>Priznanje Fakultete za strojništvo in FERI</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="images/galerija/rokovanje.jpg" alt="Podelitev priznanja članu ekipe ADUM" loading="lazy">
+            <figcaption>Podelitev priznanja članom ekipe</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Pridruži se naslednji sezoni</h2>
+          <p>Naslednje fotografije lahko nastanejo z ekipo, v kateri boš tudi ti. Pridruži se ADUM-u.</p>
+        </div>
+        <a class="btn btn--light" href="Kontakt.html">Postani član</a>
+      </div>
+    </section> -->
+  </main>
+
+ 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="images/brand/adum-logo.png" alt="ADUM">
+          <p>
+            Aeronavtično društvo Univerze v Mariboru združuje študente, ki gradijo letala,
+            se udeležujejo mednarodnih tekmovanj in si delijo znanje.
+          </p>
+          <div class="footer-social">
+
+            <a href="https://instagram.com/adum_um" target="_blank" rel="noopener" aria-label="ADUM na Instagramu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"></path>
+                <path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"></path>
+                <path d="M17 7v.01"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com/aeroUM" target="_blank" rel="noopener" aria-label="ADUM na Facebooku">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+              </svg>
+            </a>
+            <a href="mailto:info@adum.si" aria-label="Piši nam na info@adum.si">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
+                <path d="M3 7l9 6l9 -6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h2>Povezave</h2>
+          <ul>
+            <li><a href="index.html">O nas</a></li>
+            <li><a href="projekti.html">Projekti</a></li>
+            <li><a href="clani.html">Člani</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="Sponzorji.html">Sponzorji</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Kontakt</h2>
+          <address>
+            UM FERI<br>
+            Koroška cesta 46<br>
+            2000 Maribor<br>
+            <a href="mailto:info@adum.si">info@adum.si</a>
+          </address>
+        </div>
+
+        <div class="footer-col footer-col--legal">
+          <h2>Podatki društva</h2>
+          <p class="footer-legal">
+            Matična številka: 4096069000<br>
+            Davčna številka: 45460647<br>
+            TRR: SI56 6100 0001 6085 081<br>
+            Delavska hranilnica d.d.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year></span> ADUM, Aeronavtično društvo Univerze v Mariboru.</p>
+        <p>Izdelano s prostovoljnim delom članov.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
