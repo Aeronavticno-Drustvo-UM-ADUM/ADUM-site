@@ -53,10 +53,7 @@
   transform: scale(1.02);
 }
 
-.project-gallery img:only-child {
-  grid-column: 1 / -1;
-  aspect-ratio: 16 / 8;
-}
+
 
 @media (max-width: 960px) {
   .project-gallery {

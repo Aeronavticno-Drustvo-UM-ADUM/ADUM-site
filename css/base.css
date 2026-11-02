@@ -38,24 +38,7 @@
   --transition: 0.22s ease;
 }
 
-html[data-theme="dark"] {
-  --light: #14161a;
-  --surface: #1f2329;
-  --surface-2: #2a2f36;
-  --heading: #f1f3f5;
-  --text: #e7e9ec;
-  --text-muted: #a7afb8;
-  --border: #343941;
-  --orange-soft: rgba(237, 120, 53, 0.16);
-  --orange-text: #f6a87c;
-  --link-hover: #ffd0b0;
-  --dark-deep: #0f1114;
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
 
-  color-scheme: dark;
-}
 
 *,
 *::before,
@@ -432,7 +415,6 @@ p:last-child {
   }
 }
 
-/* Upoštevaj nastavitev "manj animacij" v operacijskem sistemu */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

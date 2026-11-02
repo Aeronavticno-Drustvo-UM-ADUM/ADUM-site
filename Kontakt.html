@@ -45,17 +45,7 @@
         <img src="images/brand/fs.svg" alt="Fakulteta za strojništvo" class="partner-logos__fs">
         <img src="images/brand/feri.png" alt="FERI">
       </div>
-      <button class="theme-toggle" type="button" aria-label="Preklopi na temni način">
-        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-        </svg>
-        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"></path>
-        </svg>
-      </button>
+
     </div>
   </header>
 
@@ -141,18 +131,24 @@
           </div>
 
           <div class="map-card">
-            <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=15.6320%2C46.5555%2C15.6442%2C46.5627&amp;layer=mapnik&amp;marker=46.55909%2C15.63808"
-              title="Zemljevid: UM FERI, Koroška cesta 46, Maribor"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="map-card__bar">
-              <span>UM FERI · Koroška cesta 46, Maribor</span>
-              <a href="https://www.openstreetmap.org/?mlat=46.55909&amp;mlon=15.63808#map=17/46.55909/15.63808"
-                 target="_blank" rel="noopener">Odpri večji zemljevid</a>
-            </div>
-          </div>
+  <iframe
+    src="https://maps.google.com/maps?q=46.55909,15.63808&z=17&output=embed"
+    title="Zemljevid: UM FERI, Koroška cesta 46, Maribor"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+  </iframe>
+
+  <!-- <div class="map-card__bar">
+    <span>UM FERI · Koroška cesta 46, Maribor</span>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=46.55909,15.63808"
+      target="_blank"
+      rel="noopener noreferrer">
+      Odpri v Google Zemljevidih
+    </a>
+  </div> -->
+</div>
         </div>
 
         <!-- <div class="contact-cta">

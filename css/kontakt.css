@@ -78,9 +78,7 @@
   border: 0;
 }
 
-html[data-theme="dark"] .map-card iframe {
-  filter: invert(0.9) hue-rotate(180deg) brightness(0.9) contrast(0.9);
-}
+
 
 .map-card__bar {
   display: flex;

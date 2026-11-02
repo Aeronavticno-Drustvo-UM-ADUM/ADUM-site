@@ -45,39 +45,62 @@
         <img src="images/brand/fs.svg" alt="Fakulteta za strojništvo" class="partner-logos__fs">
         <img src="images/brand/feri.png" alt="FERI">
       </div>
-      <button class="theme-toggle" type="button" aria-label="Preklopi na temni način">
-        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-        </svg>
-        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"></path>
-        </svg>
-      </button>
+
     </div>
   </header>
 
   <main id="main">
  
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <span class="eyebrow">Študentsko letalsko društvo Univerze v Mariboru</span>
-          <h1>Aeronavtično<br><span class="accent">društvo UM</span></h1>
-          <p class="hero-lead">
-            Gradimo radijsko vodena letala in z njimi tekmujemo po svetu.
-            Pridruži se ekipi, ki znanje iz predavalnic spremeni v let.
-          </p>
 
-          <div class="btn-row">
-            <a class="btn btn--primary" href="Kontakt.html">Postani član</a>
-            <a class="btn btn--ghost" href="projekti.html">Poglej projekte</a>
-          </div>
-        </div>
+<section class="hero hero--aircraft">
+  <div class="hero__inner">
+
+    <div class="hero__content">
+
+
+      <h1>
+        Aeronavtično
+        <span>društvo UM.</span>
+      </h1>
+
+      <p class="hero__lead">
+        Gradimo radijsko vodena letala in z njimi tekmujemo po svetu.
+        Pridruži se ekipi, ki znanje iz predavalnic spremeni v let.
+      </p>
+    </div>
+
+    <div class="hero__visual">
+
+
+      <model-viewer
+  class="hero__model"
+  src="models/avion.glb"
+  alt="3D model letala ADUM"
+  camera-controls
+  auto-rotate
+  rotation-per-second="12deg"
+  camera-orbit="0deg 75deg 140%"
+  environment-image="models/nebo.hdr"
+  shadow-intensity="1"
+  exposure="1"
+  interaction-prompt="auto"
+  loading="eager">
+</model-viewer>
+      <div class="hero__visual-hint">
+        <span>↔</span> POVLECI ZA RAZGLED
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<script
+  type="module"
+  src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+</script>
 
     <!-- Naša misija
     <div class="container mission-wrap">
@@ -126,32 +149,34 @@
     </section>
 
 
-    <section class="section section--dark">
-      <div class="container">
-        <div class="section-head">
-          <h2>Iz sezone v sezono napredujemo</h2>
-          <p>
-            Od prvega tekmovanja leta 2018 do uvrstitve med najboljše ekipe na svetu.
-            Za vsakim rezultatom stojijo meseci načrtovanja, izdelave in testiranja.
-          </p>
-        </div>
+<!-- 
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <h2>Naši rezultati skozi leta</h2>
+      <p>
+        Na tekmovanjih sodelujemo od leta 2018. Vsako sezono
+        razvijamo letalo in izboljšujemo naše rezultate.
+      </p>
+    </div>
 
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-number">2018</span>
-            <span class="stat-label">prva sezona na tekmovanju DBF v Tucsonu</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">75</span>
-            <span class="stat-label">ekip na tekmovanju SAE Aero Design East 2026</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">11.</span>
-            <span class="stat-label">mesto skupno v sezoni 2025/2026</span>
-          </div>
-        </div>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">2018</span>
+        <span class="stat-label">prva udeležba na tekmovanju DBF v Tucsonu</span>
       </div>
-    </section>
+      <div class="stat">
+        <span class="stat-number">75</span>
+        <span class="stat-label">ekip na tekmovanju SAE Aero Design East 2026</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">11.</span>
+        <span class="stat-label">skupno mesto v sezoni 2025/2026</span>
+      </div>
+    </div>
+  </div>
+</section> -->
+
 
 
     <section class="section section--white">

@@ -19,43 +19,50 @@
   color: var(--text-muted);
 }
 
+/* Glavni sponzor */
 .sponsor-hero {
   display: flex;
   justify-content: center;
 }
 
+
 .sponsor-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 134px;
-  padding: 24px;
-    min-width: 60px;
-  border: 1px solid #e4e7ea;
-  border-radius: var(--radius-md);
-  background: #fdfdfc;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 150px;
 }
 
+.sponsor-card img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: 90px;
+  object-fit: contain;
+  object-position: center;
+}
 .sponsor-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
+
+/* .sponsor-card img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: 72px;
+  object-fit: contain;
+  object-position: center;
+} */
 
 .sponsor-card--faculty {
   min-height: 150px;
 }
 
 .sponsor-card--faculty img {
-  max-height: 88px;
-}
-
-.sponsor-card img {
-  width: auto;
-  max-width: 100%;
-  max-height: 62px;
-  object-fit: contain;
+  height: 88px;
 }
 
 .sponsor-card--xl {
@@ -64,66 +71,110 @@
 }
 
 .sponsor-card--xl img {
-  max-height: 108px;
+  max-width: 300px;
+  height: 108px;
+}
+
+/* Dvije kartice u redu */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.sponsor-grid > .sponsor-card {
+  flex: 0 1 220px;
+  min-width: 0;
 }
 
 .sponsor-grid--2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
   gap: 20px;
+  width: 100%;
   max-width: 760px;
   margin: 0 auto;
 }
 
-.sponsor-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /* grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); */
-  gap: 16px;
-  min-width: 60px;
+.sponsor-grid--2 > .sponsor-card {
+  flex: 0 1 220px;
+  min-width: 0;
 }
-
 .sponsor-card--lg {
   min-height: 180px;
-    min-width: 60px;
 }
 
 .sponsor-card--lg img {
-  max-height: 88px;
+  height: 88px;
 }
 
 .sponsor-grid--spaced {
   margin-top: 20px;
 }
 
+/* Široki logotipi: više prostora po širini */
 .sponsor-logo--wide {
-  max-height: 44px !important;
+  max-width: 260px !important;
+  height: 60px !important;
 }
 
-/* ---------- Manjši zasloni ---------- */
+/* Manji zasloni */
 @media (max-width: 680px) {
   .sponsor-grid--2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .sponsor-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
   }
-
+  .sponsor-grid > .sponsor-card,
+  .sponsor-grid--2 > .sponsor-card {
+    flex-basis: calc(50% - 6px);
+  }
   .sponsor-card {
-    min-height: 112px;
+    min-height: 120px;
     padding: 16px;
   }
 
   .sponsor-card img {
-    max-height: 48px;
+    max-width: 100%;
+    height: 56px;
+  }
+
+  .sponsor-card--faculty img {
+    height: 68px;
+  }
+
+  .sponsor-card--lg {
+    min-height: 140px;
+  }
+
+  .sponsor-card--lg img {
+    height: 68px;
   }
 
   .sponsor-card--xl {
     min-height: 160px;
+  }
+
+  .sponsor-card--xl img {
+    height: 88px;
+  }
+
+  .sponsor-logo--wide {
+    height: 48px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+   .sponsor-grid > .sponsor-card,
+  .sponsor-grid--2 > .sponsor-card {
+    flex-basis: 100%;
   }
 }

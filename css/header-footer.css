@@ -115,13 +115,7 @@
   display: block;
 }
 
-html[data-theme="dark"] .theme-toggle__sun {
-  display: block;
-}
 
-html[data-theme="dark"] .theme-toggle__moon {
-  display: none;
-}
 
 .nav-toggle {
   display: none;
