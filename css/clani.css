@@ -1,8 +1,13 @@
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+}
+
+.team-flex > .team-card {
+  flex: 0 1 calc((100% - 4 * 24px) / 5);
 }
 
 .team-card {
@@ -72,21 +77,24 @@
 }
 
 @media (max-width: 1200px) {
-  .team-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .team-flex > .team-card {
+    flex-basis: calc((100% - 2 * 24px) / 3);
   }
 }
 
 @media (max-width: 960px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .team-flex > .team-card {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
 @media (max-width: 680px) {
-  .team-grid {
-    grid-template-columns: 1fr;
+  .team-flex {
     max-width: 420px;
     margin: 0 auto;
+  }
+
+  .team-flex > .team-card {
+    flex-basis: 100%;
   }
 }

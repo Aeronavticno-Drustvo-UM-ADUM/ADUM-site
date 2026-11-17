@@ -60,22 +60,28 @@
   color: var(--orange-light);
 }
 
+/* Logotipi univerze in fakultet - stojijo takoj za logotipom ADUM */
 .partner-logos {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding-left: 22px;
+  flex-shrink: 0;
+  gap: 16px;
+  margin-left: 4px;
+  padding-left: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .partner-logos img {
   width: auto;
-  height: 28px;
-  opacity: 0.9;
+  height: 30px;
+  max-width: 100px;
+  opacity: 0.88;
+  /* Novi SVG logotipi so modri; na temni glavi jih prikažemo belo. */
+  filter: brightness(0) invert(1);
 }
 
 .partner-logos img.partner-logos__fs {
-  height: 38px;
+  height: 36px;
 }
 
 /* Gumb za preklop med svetlo in temno temo. */
@@ -263,10 +269,6 @@
 
 /* ---------- Manjši zasloni ---------- */
 @media (max-width: 1200px) {
-  .partner-logos {
-    display: none;
-  }
-
   .footer-main {
     grid-template-columns: 1.4fr 1fr 1.2fr;
   }
@@ -277,6 +279,24 @@
 }
 
 @media (max-width: 960px) {
+  .header-inner {
+    gap: 14px;
+  }
+
+  .partner-logos {
+    gap: 12px;
+    padding-left: 14px;
+  }
+
+  .partner-logos img {
+    height: 24px;
+    max-width: 80px;
+  }
+
+  .partner-logos img.partner-logos__fs {
+    height: 30px;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -320,11 +340,27 @@
 
 @media (max-width: 680px) {
   .header-inner {
-    padding: 9px 18px;
+    gap: 10px;
+    padding: 8px 14px;
   }
 
   .brand img {
-    height: 44px;
+    height: 40px;
+  }
+
+  .partner-logos {
+    gap: 8px;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+
+  .partner-logos img {
+    height: 20px;
+    max-width: 65px;
+  }
+
+  .partner-logos img.partner-logos__fs {
+    height: 25px;
   }
 
   .footer-main {

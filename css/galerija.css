@@ -6,13 +6,37 @@
   margin: 0 auto;
  
 }
+/* Flex varijanta za linkove na podstranice galerije (galerija.html).
+   Za povratek na grid: v galerija.html zamenjaj class="gallery-flex" nazaj
+   v class="gallery-grid" in izbriši ta blok (ter .gallery-flex pravila v
+   media queryjih spodaj). */
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-flex > .gallery-item {
+  flex: 0 1 calc((100% - 24px) / 2);
+}
+
 .gallery-subpage-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   margin: 0 auto;
-   max-width: 1000px;
- 
+  max-width: var(--gallery-subpage-width, 1000px);
+}
+
+/* Podstranice galerije: naslov in besedilo (breadcrumb, h1, gumb nazaj)
+   se poravnajo z levim robom mreže slik. Mreža je široka največ 1000px
+   in centrirana, zato je treba tudi vsebnik zožiti na enako širino. */
+.gallery-subpage .page-hero .container,
+.gallery-subpage .section > .container {
+  max-width: calc(var(--gallery-subpage-width, 1000px) + 48px);
 }
 
 .gallery-item,.gallery-subpage-item {
@@ -54,6 +78,25 @@
   object-position: center;
  
 }
+
+/* Enak radius na vseh fotografijah (usklajen z notranjim radiusom kartice,
+   ki ima 8px obrobe). */
+.gallery-item img,
+.gallery-subpage-item img {
+  border-radius: calc(var(--radius-md) - 8px);
+}
+
+/* Gumb za povratek na galerijo: odmik od mreže slik. */
+.gallery-back {
+  margin: 48px 0 0;
+}
+
+.gallery-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
 .gallery-item figcaption {
   padding: 16px 18px;
   font-size: 1rem;
@@ -88,6 +131,15 @@
    .gallery-grid {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  /* Flex varijanta: 1 kartica na vrstico */
+  .gallery-flex {
+    gap: 18px;
+  }
+
+  .gallery-flex > .gallery-item {
+    flex-basis: 100%;
   }
 
   .gallery-item img {

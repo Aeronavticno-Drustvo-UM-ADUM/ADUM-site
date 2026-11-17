@@ -341,6 +341,7 @@
 .hero__content {
   position: relative;
   z-index: 2;
+
 }
 
 .hero__eyebrow {
@@ -368,7 +369,7 @@
   margin: 24px 0;
   font-size: clamp(3rem, 5.5vw, 5.5rem);
   line-height: 1;
-  letter-spacing: -0.045em;
+letter-spacing: 2px;
   font-weight: 800;
 }
 
