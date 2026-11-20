@@ -9,28 +9,7 @@
     
     <link link rel="icon" type="image/ico" sizes="16x16" href="https://adum.si/favicon.ico" />
 
-    <style>
-        /* Samo za centriranje zadnjega člana */
-        .team-grid {
-            position: relative;
-        }
-        
-        /* Skrijemo prazen element za centriranje */
-        .empty-space {
-            visibility: hidden;
-            height: 0;
-            width: 100%;
-        }
-        
-        /* Za centriranje zadnjega člana */
-        .center-last {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            clear: both;
-            margin-top: 20px;
-        }
-    </style>
+     <link href="/clani.css" rel="stylesheet">
 </head>
 <body>
 <input type="checkbox" id="menu-toggle">
@@ -93,94 +72,82 @@
 
     <h2 class="vodje-naslov">VODJE SKLOPOV</h2>
 
-    <div class="team-grid">
-
-                <div class="team-member">
+   <div class="team-flex">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/matevz_bela.jpg" alt="MATEVŽ ŠAVORA" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/Predsednica_Julija_Valentan.png" alt="Portret: Julija Valentan" loading="lazy">
             </div>
-            <div class="member-name">MATEVŽ ŠAVORA</div>
-            <div class="member-role">PREDSEDNIK</div>
-        </div>
-
-                <div class="team-member">
+            <h3>Julija Valentan</h3>
+            <p class="member-role">Predsednica</p>
+          </article>
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/mitja.jpeg" alt="MITJA ŠTRAKL" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/Glavni_inženir_Mitja_Štrakl.jpg" alt="Portret: Mitja Štrakl" loading="lazy">
             </div>
-            <div class="member-name">MITJA ŠTRAKL</div>
-            <div class="member-role">GLAVNI INŽENIR</div>
-        </div>
+            <h3>Mitja Štrakl</h3>
+            <p class="member-role">Glavni inženir</p>
+          </article>
 
-                <div class="team-member">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/matic.jpeg" alt="MATIC DREU" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/Aerodinamika_Matic_Dreu.jpeg" alt="Portret: Matic Dreu" loading="lazy">
             </div>
-            <div class="member-name">MATIC DREU</div>
-            <div class="member-role">AERODINAMIKA</div>
-        </div>
+            <h3>Matic Dreu</h3>
+            <p class="member-role">Aerodinamika</p>
+          </article>
 
-                    <div class="team-member">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/jan.jpeg" alt="JAN KORITNIK" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/KonstrukcijaRobotka_Jan_Koritnik.jpeg" alt="Portret: Jan Koritnik" loading="lazy">
             </div>
-            <div class="member-name">JAN KORITNIK</div>
-            <div class="member-role">CAM</div>
-        </div>
+            <h3>Jan Koritnik</h3>
+            <p class="member-role">Konstrukcija Robotka</p>
+          </article>
 
-
-                <div class="team-member">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/blaz_morel_bela.jpg" alt="BLAŽ MOREL" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/KonstrukcijaLetala_Enej_Pintarič.png" alt="Portret: Enej Pintarič" loading="lazy">
             </div>
-            <div class="member-name">BLAŽ MOREL</div>
-            <div class="member-role">KONSTRUKCIJA LETALA</div>
-        </div>
+            <h3>Enej Pintarič</h3>
+            <p class="member-role">Konstrukcija letala</p>
+          </article>
 
-               <div class="team-member">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/matjaz_bela.jpg" alt="MATJAŽ PERNEK" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/PCBinElektronika_Matjaž_Pernek.jpg" alt="Portret: Matjaž Pernek" loading="lazy">
             </div>
-            <div class="member-name">MATJAŽ PERNEK</div>
-            <div class="member-role">POGONSKI SKLOP, SISTEMI</div>
-        </div>
-
-                <div class="team-member">
+            <h3>Matjaž Pernek</h3>
+            <p class="member-role">PCB in Elektronika</p>
+          </article>
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/viktor1_bela.jpg" alt="VIKTOR RACKOV" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/PCBinElektronika_Luka_Kranjc.png" alt="Portret: Luka Kranjc" loading="lazy">
             </div>
-            <div class="member-name">VIKTOR RACKOV</div>
-            <div class="member-role">PROGRAMSKA OPREMA, SISTEMI</div>
-        </div>
-
-                <div class="team-member">
+            <h3>Luka Kranjc</h3>
+            <p class="member-role">PCB in Elektronika</p>
+          </article>
+          
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/luka1.jpg" alt="LUKA VOVK" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/Programiranje_Viktor_Rackov.jpg" alt="Portret: Viktor Rackov" loading="lazy">
             </div>
-            <div class="member-name">LUKA VOVK</div>
-            <div class="member-role">STROJNI VID</div>
-        </div>
+            <h3>Viktor Rackov</h3>
+            <p class="member-role">Programiranje</p>
+          </article>
 
-        <div class="team-member">
+          <article class="team-card">
             <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/andy.jpeg" alt="ANDY PREMZL" class="avatar-img">
+              <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/vodje/Odnosi_z_javnostjo_Anastasija_Džudžar.jpg" alt="Portret: Anastasija Džudžar" loading="lazy">
             </div>
-            <div class="member-name">ANDY PREMZL</div>
-            <div class="member-role">TOVOR</div>
+            <h3>Anastasija Džudžar</h3>
+            <p class="member-role">Odnosi z javnostjo</p>
+          </article>
+
+
+
+
+
         </div>
-
-        
-        <div class="empty-space"></div>
-        
-
-        <div class="team-member">
-            <div class="avatar">
-                <img src="https://aeronavticno-drustvo-um-adum.github.io/ADUM-site/images/members/anastasija_bela.jpg" alt="ANASTASIJA DŽUDŽAR" class="avatar-img">
-            </div>
-            <div class="member-name">ANASTASIJA DŽUDŽAR</div>
-            <div class="member-role">ODNOSI Z JAVNOSTJO</div>
-        </div>
-
-    </div> 
 </div>
 
 <footer>
